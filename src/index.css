@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'VT323', monospace;
+  min-height: 100vh;
+}
+
+.glow {
+  text-shadow: 0 0 1px #ffffff, 0 0 15px #af1616, 0 0 1px #ff0000, 0 0 5px #ff0000;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.bg-math {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
